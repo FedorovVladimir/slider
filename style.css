@@ -1,0 +1,65 @@
+/* Собственно сам слайдер */
+.slider {
+    width: 720px;
+    position: relative;
+    margin: auto;
+}
+
+/* Картинка мастабируется по отношению к родительскому элементу */
+.slider .item img {
+    object-fit: cover;
+    width: 100%;
+}
+
+/* Кнопки вперед и назад */
+.slider .prev, .slider .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: greenyellow;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+}
+
+.slider .next {
+    right: -100px;
+}
+
+.slider .prev {
+    left: -100px;
+}
+
+.slider .prev:hover, .slider .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+}
+
+/* стили отдельно каждому слайдеру */
+.slider-hair {
+    left: 50px;
+}
+
+.slider-eyes {
+    width: 470px;
+    top: -200px;
+}
+
+.slider-mouth {
+    width: 250px;
+    top: -110px;
+}
+
+.slider-mustache {
+    width: 400px;
+    top: -330px;
+}
+
+.slider-head {
+    z-index: -1000;
+    width: 530px;
+    top: -630px;
+}
